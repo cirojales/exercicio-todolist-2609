@@ -5,7 +5,7 @@ function atualizarQuantidade() {
 function listarTarefas() {
   let conteudo = buscar()
     .sort((a, b) => a.titulo.localeCompare(b.titulo))
-    .map(function (tarefa) {
+    .map((tarefa) => {
       return `
         <div>
           <input type="checkbox"> 
